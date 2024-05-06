@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #3d535f25;
+}
+
+.nav {
+    display: flex;
+    margin: 20px;
+    position: fixed;
+    z-index: 200;
+    
+}
+
+.nav-item {
+    display: flex;
+    margin: auto;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-item li a,
+.logo a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #3d535f;
+}
+
+.nav-item li a:hover {
+    color: #7f00ff;
+}
+
+.dot {
+    color: #7f00ff;
+}
+
+.shape1 {
+    z-index: 1;
+    width: 8rem;
+    height: 8rem;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    border-radius: 70px;
+    position: absolute;
+    animation: anima 2s ease-in-out infinite alternate;
+}
+
+@keyframes anima {
+    to {
+        margin: 5rem 0px 0px 19rem;
+    }
+
+    from {
+        margin: 7rem 0px 0px 19rem;
+    }
+
+}
+
+.shape2 {
+    width: 21rem;
+    height: 21rem;
+    background: linear-gradient(45deg, #7f00ff, pink);
+    border-radius: 200px;
+    position: absolute;
+    animation: anima2 4s ease-in-out infinite alternate;
+}
+
+@keyframes anima2 {
+    to {
+        margin: 300px 0px 0px -130px;
+    }
+
+    from {
+        margin: 350px 0px 0px -50px;
+    }
+
+}
+
+.shape3 img {
+    height: 27rem;
+    position: absolute;
+    animation: anima3 2s ease-in-out infinite alternate;
+}
+
+@keyframes anima3 {
+    to {
+        margin: 200px 0px 0px 56%;
+    }
+
+    from {
+        margin: 240px 0px 0px 55%;
+    }
+}
+
+.my-photo img {
+    z-index: 5;
+    height: 37rem;
+    position: absolute;
+    transform: rotateY(180deg);
+    animation: anima4 2s ease-in-out infinite alternate;
+}
+
+@keyframes anima4 {
+    to {
+        margin: 100px 0px 0px 60%;
+    }
+
+    from {
+        margin: 120px 0px 0px 63%;
+    }
+}
+
+
+.about-me {
+    width: 400px;
+    position: absolute;
+    z-index: 100;
+    margin: 200px 0px 0px 10%;
+}
+
+.hello {
+    font-size: 46px;
+    font-weight: 400;
+    color: #3d535f;
+}
+
+h1 {
+    font-size: 80px;
+    color: #3d535f;
+}
+
+.multiText {
+    color: #7f00ff;
+    text-transform: capitalize;
+}
+
+.btns button {
+    padding: 7px;
+    border: none;
+    background-color: #3d535f;
+    color: white;
+    margin: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+
+.about-me p{
+    font-size: 20px;
+    color: #053651;
+}
+
+.second-page {
+    position: absolute;
+    z-index: 15;
+    margin-top: 675px;
+    height: 700px;
+    width: 100%;
+    background-color: #1a313e;
+}
