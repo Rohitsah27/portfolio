@@ -1,17 +1,27 @@
 * {
     margin: 0;
     padding: 0;
+    
+    
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 .container {
+    width: 100vw;
     background-color: #3d535f25;
 }
 
 .nav {
     display: flex;
-    margin: 20px;
+    width: 100vw;
     position: fixed;
+    padding: 10px;
     z-index: 200;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0px 0px 15px lightgray ;
     
 }
 
@@ -20,6 +30,8 @@
     margin: auto;
     list-style: none;
     gap: 30px;
+    
+
 }
 
 .nav-item li a,
@@ -114,25 +126,25 @@
 
 
 .about-me {
-    width: 400px;
+    width: 500px;
     position: absolute;
     z-index: 100;
     margin: 200px 0px 0px 10%;
 }
 
 .hello {
-    font-size: 46px;
+    font-size: 40px;
     font-weight: 400;
     color: #3d535f;
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 50px;
     color: #3d535f;
 }
 
 .multiText {
-    color: #7f00ff;
+    color: #822dd6;
     text-transform: capitalize;
 }
 
@@ -145,16 +157,210 @@ h1 {
     box-shadow: 5px 5px 10px black;
 }
 
-.about-me p{
+.about-me p{ 
     font-size: 20px;
     color: #053651;
 }
 
-.second-page {
+.skills{
     position: absolute;
     z-index: 15;
     margin-top: 675px;
-    height: 700px;
-    width: 100%;
     background-color: #1a313e;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-around;
+    
+
+}
+
+.skills img{
+    height: 40px;
+    margin: 12px;
+}
+
+.skills img:hover{
+    height: 45px;
+
+}
+
+#bootstrap{
+    filter: invert(36%) sepia(80%) saturate(1944%) hue-rotate(250deg) brightness(103%) contrast(101%);
+}
+
+.bio{
+    width: 80%;
+    margin-top: 70px;
+    margin-left: 70px;
+   
+}
+
+.skill{
+    margin-left: 70px;
+    font-size: 17px;
+
+}
+
+.aboutus{
+    direction: underline;
+
+}
+
+
+.second-page {
+    position: absolute;
+    z-index: 14;
+    margin-top: 720px;
+    height: 800px;
+    width: 100%;
+    background-color: white;
+}
+
+.second-page h1{
+    margin: 40px 0px 0px 60px;
+}
+
+.second-page p{
+    margin: 10px 0px 0px 62px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-around;
+    margin-top: 50px;
+    
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-container img {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.project-text {
+  color: #053651;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+    
+}
+
+/* contact */
+
+.contact-page {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.contact-form {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.contact-form h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.break-line{
+    text-align: center;
+    padding: 10px;
+    margin-top: 120px;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.forth-page img{
+    width: 35%;
+    padding: 10px;
+    margin: 20px 0px 0px 50px;
+    border-radius: 20px;
+
 }

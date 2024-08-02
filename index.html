@@ -7,7 +7,7 @@
     <title>Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 
 <body>
@@ -23,14 +23,15 @@
                 </div>
 
                 <div class="nav-item">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact-us">Contact Us</a></li>
                 </div>
             </div>
 
-            <div class="first-page">
+            <div class="first-page" id="Home">
                 <div class="shape1"></div>
                 <div class="shape2"></div>
 
@@ -38,10 +39,10 @@
                     <span class="hello">Hello</span><span>__</span>
                     <h1>I'm <span class="multiText"></span></h1>
                     <p>Specializing in the IT sector, I excel in coding,
-                         design, and app and website development. With a
-                          constant eye on industry advancements, I deliver innovative 
-                          solutions that prioritize quality and efficiency, ensuring impactful
-                           results.</p>
+                        design, and app and website development. With a
+                        constant eye on industry advancements, I deliver innovative
+                        solutions that prioritize quality and efficiency, ensuring impactful
+                        results.</p>
                     <div class="btns">
                         <button>Download CV</button>
                         <button>Hire Me</button>
@@ -57,13 +58,17 @@
 
             </div>
 
-        </div>
-
-
-
-        <div class="second-page">
-            <div class="c">
-
+            <div class="skills">
+                <img src="./skill-logo/html-5.png">
+                <img src="./skill-logo/css-3.png">
+                <img src="./skill-logo/js.png">
+                <img id="bootstrap" src="./skill-logo/bootstrap.png">
+                <img src="./skill-logo/physics.png">
+                <img src="./skill-logo/git.png">
+                <img src="./skill-logo/seo.png">
+                <img src="./skill-logo/figma.png">
+                <img src="./skill-logo/wordpress.png">
+                <img src="./skill-logo/blogger.png">
             </div>
 
         </div>
@@ -74,19 +79,129 @@
 
 
 
-    </div>
 
 
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"> </script>
-    <script>
-        var typingEffect = new Typed(".multiText", {
-            strings: ["coder", "web Developer", "designer", "app developer"],
-            loop: true,
-            typeSpeed: 100,
-            backSpeed: 80,
-            backDelay: 1500
-        })
-    </script>
+
+
+        <div class="second-page" id="About">
+            <div class="bio">
+
+                <h1 class="aboutus">About-us</h1>
+
+                <p>Hi, I'm Rohit Kumar Sah, a passionate web developer dedicated to creating
+                    seamless and user-friendly web applications. With a strong foundation in
+                    both front-end and back-end development, I thrive on solving complex problems
+                    and continuously learning new technologies. My goal is to build efficient and
+                    scalable solutions that provide exceptional user experiences.</p>
+
+                <h1>Rohit Kumar Sah</h1>
+                <p><strong>Location:</strong> Arunachal Pradesh (Originally from Bihar)</p>
+                <p><strong>Education:</strong> Bachelor of Computer Applications (BCA)</p>
+                <p><strong>Institution:</strong> Asian Institute of Management and Technology, Guwahati, Assam</p>
+                
+                <br id="Skills">
+
+                <h1>Skills</h1>
+                <ul class="skill">
+                    <li><strong>Frontend Development:</strong> HTML, CSS, JavaScript, React</li>
+                    <li><strong>Backend Development:</strong> Node.js, MongoDB, Firebase</li>
+                    <li><strong>Mobile Development:</strong> Android Studio</li>
+                    <li><strong>Design Tools:</strong> Figma</li>
+                    <li><strong>Content Management:</strong> Blogger, WordPress</li>
+                    <li><strong>SEO:</strong> Search Engine Optimization</li>
+                    <li><strong>Programming Languages:</strong> C, Java</li>
+                    <li><strong>Operating Systems:</strong> Linux</li>
+                    <li><strong>AI Integration:</strong> ChatGPT</li>
+                </ul>
+
+            </div>
+
+            <div class="break-line" id="Projects"></div>
+
+            
+
+            <div >
+                <h1>Projects</h1>
+                <p>Simple Static Website</p>
+            </div>
+
+            <div class="project-container">
+                <div class="project-item">
+                    <img src="p1.jpg" alt="">
+                    <p class="project-text">Italian food template</p>
+                </div>
+                <div class="project-item">
+                    <img src="p2.jpg" alt="">
+                    <p class="project-text">American food website and app template</p>
+                </div>
+                <div class="project-item">
+                    <img src="p3.jpg" alt="">
+                    <p class="project-text">Italian food concept web template</p>
+                </div>
+            </div>
+
+            <div class="break-line"></div>
+
+            <div class="forth-page">
+                <h1>Landing page</h1>
+                <img src="./skill-logo/landing-page-1.jpg" alt="">
+            </div>
+
+            <div class="break-line"></div>
+
+
+
+
+            <div class="contact-page" id="Contact-us">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h1>Contact Us</h1>
+                        <p>If you have any questions or need further information, please contact us through the form
+                            below or reach out directly via email or phone.</p> <br>
+
+                        <strong>Email:</strong> rohitkrsah27@example.com</li> &nbsp;
+                        <strong>Phone:</strong> +91-9393002793</li> &nbsp;
+                        <strong>Address:</strong> Dirang, Arunachal Pradesh, 790101</li>
+
+                    </div>
+                    <div class="break-line"></div>
+                    <br>
+
+                    <div class="contact-form">
+                        <h1>Contact Form</h1> <br>
+                        <form action="submit_form.php" method="post">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <footer>
+                    <p>&copy; 2024 Rohit kumar sah. All rights reserved.</p>
+                </footer>
+
+            </div>
+
+        </div>
+
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"> </script>
+        <script>
+            var typingEffect = new Typed(".multiText", {
+                strings: ["coder", "web Developer", "designer", "app developer"],
+                loop: true,
+                typeSpeed: 150,
+                backSpeed: 90,
+                backDelay: 2000
+            })
+        </script>
 
 
 
