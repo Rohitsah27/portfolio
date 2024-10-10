@@ -45,8 +45,8 @@
                         solutions that prioritize quality and efficiency, ensuring impactful
                         results.</p>
                     <div class="btns">
-                        <button>Download CV</button>
-                        <button>Hire Me</button>
+                        <button id="downloadBtn">Download CV</button>
+                        <!-- <button>Hire Me</button> -->
                     </div>
                 </div>
 
@@ -131,6 +131,13 @@
             <div class="certificate">
                 <h1 class="ani1">Certificate</h1>
                 <img class="cert ani2" src="./front-end-cert.jpg" alt="">
+            </div>
+
+            <div class="break-line" id="Projects"></div>
+
+            <div class="certificate">
+                <!-- <h1 class="ani1">Certificate</h1> -->
+                <img class="cert ani2" src="AiCert.jpg" alt="">
             </div>
 
             <div class="break-line" id="Projects"></div>
@@ -241,6 +248,28 @@
                 backDelay: 2000
             })
         </script>
+
+
+<script>
+    // JavaScript to handle the button click and trigger the PDF download
+    document.getElementById('downloadBtn').addEventListener('click', function () {
+        // Create an <a> element dynamically
+        const link = document.createElement('a');
+        
+        // Set the file URL and download attributes
+        link.href = 'CV.pdf'; // Replace with the actual path to the PDF file
+        link.download = 'CV.pdf'; // The name of the downloaded file
+        
+        // Append the link to the body (required for Firefox)
+        document.body.appendChild(link);
+        
+        // Programmatically trigger the download
+        link.click();
+        
+        // Remove the link after download is triggered
+        document.body.removeChild(link);
+    });
+</script>
 
 
 
